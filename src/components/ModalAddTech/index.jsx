@@ -20,7 +20,7 @@ export const ModalAddTech = ({ showModalAddTech, techList, setTechList }) => {
         },
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${JSON.parse(token)}`,
           },
         }
       )

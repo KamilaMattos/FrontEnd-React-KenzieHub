@@ -4,14 +4,14 @@ import { FaTrashAlt } from "react-icons/fa"
 import { Button } from "../Button"
 import { StyledCard } from "./style"
 
-export const Card = ({ tech, techId, addCard }) => {
+export const Card = ({ tech, id, addCard }) => {
   const token = localStorage.getItem("@Kenziehub:token")
 
   const deleteTech = () => {
     api
-      .delete(`/users/techs/${techId}`, {
+      .delete(`/users/techs/${id}`, {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${JSON.parse(token)}`,
         },
       })
       .then(() => {

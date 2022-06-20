@@ -2,7 +2,9 @@ import styled, { css } from "styled-components"
 
 export const Container = styled.div`
   text-align: left;
-  width: 100%;
+  width: 95%;
+  
+  
   div {
     color: #f8f9fa;
     font-weight: 400;

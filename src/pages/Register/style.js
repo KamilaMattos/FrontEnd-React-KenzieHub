@@ -9,7 +9,7 @@ export const Container = styled.div`
   header {
     display: flex;
     justify-content: space-evenly;
-    width: 56%;
+    gap: 10px;
     margin-bottom: 2rem;
 
     h1 {
@@ -17,6 +17,7 @@ export const Container = styled.div`
     }
 
     button {
+      margin-top: .5px;
       width: 79.54px;
       height: 31.95px;
       font-weight: 600;
@@ -32,9 +33,14 @@ export const Container = styled.div`
     }
   }
 
+  @media (min-width: 1100px){
+
+
+
+  }
   form {
     background: #212529;
-    width: 30%;
+   
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

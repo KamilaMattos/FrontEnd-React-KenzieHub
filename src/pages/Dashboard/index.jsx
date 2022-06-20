@@ -16,7 +16,7 @@ export const Dashboard = ({ authenticated, setAuthenticated }) => {
   const [techId, setTechId] = useState("")
   const [update, setUpdate] = useState(false)
 
-  const userId = localStorage.getItem("@Kenziehub:id")
+  const userId = JSON.parse(localStorage.getItem("@Kenziehub:id"))
   const history = useHistory()
 
   useEffect(() => {

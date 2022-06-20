@@ -13,7 +13,7 @@ export const Login = ({ authenticated, setAuthenticated }) => {
     email: yup.string().required("Campo Obrigatório"),
     password: yup
       .string()
-      .min(8, "Mínimo de 8 dígitos")
+      .min(6, "Mínimo de 6 dígitos")
       .required("Campo Obrigatório"),
   })
 
@@ -32,8 +32,8 @@ export const Login = ({ authenticated, setAuthenticated }) => {
     api
       .post("/sessions", data)
       .then((res) => {
-        localStorage.setItem("@Kenziehub:token", res.data.token)
-        localStorage.setItem("@Kenziehub:id", res.data.user.id)
+        localStorage.setItem("@Kenziehub:token", JSON.stringify(res.data.token))
+        localStorage.setItem("@Kenziehub:id", JSON.stringify(res.data.user.id))
 
         setAuthenticated(true)
 

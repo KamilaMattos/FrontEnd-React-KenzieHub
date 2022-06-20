@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   margin-top: 5em;
   gap: 2em;
 
@@ -14,8 +15,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  width: 369px;
-  height: 502px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,12 +23,15 @@ export const Content = styled.div`
 
   form {
     text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 
     input {
       color: #f8f9fa;
+      width: 50%;
     }
 
     h2 {
@@ -51,7 +54,7 @@ export const Content = styled.div`
     }
 
     button {
-      width: 324px;
+      width: 95%;
       height: 48px;
       border: 1.2182px solid #ff577f;
       border-radius: 4.06066px;
@@ -66,6 +69,7 @@ export const Content = styled.div`
 
     div {
       button {
+        width: 15.5rem;
         background: #868e96;
         border: 1.2182px solid #868e96;
         border-radius: 4px;
